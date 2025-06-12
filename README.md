@@ -1,48 +1,79 @@
-# Astro Starter Kit: Basics
+# AgroBitácora 🌿
 
-```sh
-npm create astro@latest -- --template basics
+**AgroBitácora** es una aplicación web desarrollada con [Astro](https://astro.build/) y [Tailwind CSS](https://tailwindcss.com/), orientada a agricultores que desean llevar un registro digital de sus tareas agrícolas.  
+Actualmente se encuentra en fase inicial de desarrollo y evolución como herramienta de gestión sencilla, visual y ampliable.
+
+---
+
+## 🚜 ¿Qué permite hacer?
+
+- Visualizar una lista de tareas agrícolas
+- Indicar si una tarea está completada
+- Organizar visualmente la información con diseño responsive
+- Preparar futuras funciones como calendario, control de usuarios, y generación de PDF
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+- [Astro](https://astro.build/) – Framework web moderno y ultra rápido
+- [Tailwind CSS](https://tailwindcss.com/) – Utilidades CSS para un diseño limpio y funcional
+- JavaScript – Para mostrar dinámicamente los datos
+
+---
+
+## 📂 Estructura del proyecto
+
+```
+src/
+├── components/        → futuros componentes reutilizables
+├── layouts/           → layout base con fondo y estructura
+├── pages/             → index.astro (página principal)
+├── styles/            → Tailwind y estilos globales
+└── data/              → Array simulado con tareas (tareas.js)
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Cómo ejecutar localmente
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+git clone git@github.com:Bota93/AgroBitacora.git
+cd AgroBitacora
+npm install
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Y abre en tu navegador:  
+👉 `http://localhost:4321`
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🧩 Próximos pasos
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [ ] Añadir funcionalidad para crear tareas desde formulario
+- [ ] Guardar tareas en almacenamiento local o backend
+- [ ] Vista de calendario semanal/mensual
+- [ ] Control de usuarios y protección de datos
+- [ ] Exportación en PDF de registros
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📸 Captura de pantalla
+
+![AgroBitácora UI](./public/screenshot.png)
+
+*Diseño base con fondo dinámico y lista de tareas visibles.*
+
+---
+
+## 🧑‍🌾 Autor
+
+**Adrián B.**  
+Desarrollador web y estudiante DAM con interés en la tecnología rural y software útil para la vida real.
+
+---
+
+## 📄 Licencia
+
+MIT – libre para aprender, modificar y colaborar.
