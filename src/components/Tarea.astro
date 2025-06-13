@@ -1,0 +1,11 @@
+---
+//Props que recibe el componente
+const { texto, completada } = Astro.props;
+---
+
+<li class="flex items-center gap-2">
+  <input type="checkbox" checked={completada} disabled />
+  <span class={completada ? "line-through text-gray-500" : ""}>
+    {texto}
+  </span>
+</li>
