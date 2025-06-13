@@ -1,0 +1,27 @@
+<form id="form-tarea" class="flex gap-2 mb-6">
+  <input
+    type="text"
+    id="nueva-tarea"
+    placeholder="Escribe una nueva tarea..."
+    class="flex-1 px-4 py-2 border border-grey-300 rounded text-gray-700"
+  />
+  <button
+    type="submit"
+    class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+  >
+    Añadir
+  </button>
+</form>
+
+<script type="module">
+  const form = document.querySelector("#form-tarea");
+  const input = document.querySelector("#nueva-tarea");
+
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const texto = input.value.trim();
+    if (texto === "") return;
+    alert("Aquí iría la lógica para añadir la tarea: " + texto);
+    input.value = "";
+  });
+</script>
