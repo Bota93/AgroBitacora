@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { tareas } from "../data/tareas.js";
 import Formulario from "../components/FormularioTareas.astro";
 import Tarea from "../components/Tarea.astro";
+import "../styles/global.css";
 ---
 
 <Layout />
@@ -13,19 +14,19 @@ import Tarea from "../components/Tarea.astro";
     <title>AgroBitácora</title>
   </head>
   <body>
-    <header class="bg-gray-800 text-white p-6 text-center shadow-md">
+    <header class="bg-green-900 text-white p-6 text-center shadow-md">
       <h1 class="text-4xl font-bold">AgroBitácora</h1>
       <p class="text-lg">Finca El Pino</p>
     </header>
     <main>
-      <section class="bg-purple-900 rounded shadow p-4 container mx-auto p-6">
+      <section class="bg-yellow-900 rounded shadow p-4 container text-center mx-auto p-6">
         <h2 class="text-2xl font-semibold mb-4">Bienvenido a AgroBitácora</h2>
         <p class="mb-4">
           Aquí podrás llevar un registro detallado de las actividades y eventos
           de tu finca.
         </p>
       </section>
-      <section class="bg-white rounded shadow p-4 mt-6 max-w-xl mx-auto">
+      <section class="bg-yellow-900 rounded shadow p-4 mt-6 max-w-xl mx-auto">
         <h2 class="text-xl font-semibold mb-4 bg-gray-700 rounded">
           Tareas registradas
         </h2>
